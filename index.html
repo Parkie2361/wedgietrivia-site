@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedgie Trivia - AI-Powered Multiplayer Trivia</title>
+  <meta name="description" content="Wedgie Trivia is a multiplayer trivia game with AI-generated questions personalized to you and your friends.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0612;
+      color: #e8e6f0;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Gradient background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(88, 28, 135, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(167, 139, 250, 0.08) 0%, transparent 50%);
+      z-index: -1;
+    }
+
+    /* Nav */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: 700;
+      color: #c4b5fd;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #7c3aed, #a78bfa);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    nav a.cta-nav {
+      background: #7c3aed;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: background 0.2s;
+    }
+
+    nav a.cta-nav:hover {
+      background: #6d28d9;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 100px 24px 80px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 64px);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #e8e6f0 0%, #c4b5fd 50%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #a5a0b8;
+      line-height: 1.6;
+      max-width: 560px;
+      margin: 0 auto 40px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: #7c3aed;
+      color: white;
+      padding: 16px 36px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+      transition: all 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      background: #6d28d9;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: rgba(124, 58, 237, 0.12);
+      color: #c4b5fd;
+      padding: 16px 36px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      border: 1px solid rgba(124, 58, 237, 0.3);
+      transition: all 0.2s;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(124, 58, 237, 0.2);
+      border-color: rgba(124, 58, 237, 0.5);
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px 100px;
+    }
+
+    .feature {
+      background: rgba(30, 20, 45, 0.6);
+      border: 1px solid rgba(124, 58, 237, 0.15);
+      border-radius: 16px;
+      padding: 32px;
+      transition: border-color 0.2s;
+    }
+
+    .feature:hover {
+      border-color: rgba(124, 58, 237, 0.35);
+    }
+
+    .feature-icon {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+
+    .feature h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #e8e6f0;
+    }
+
+    .feature p {
+      font-size: 15px;
+      color: #a5a0b8;
+      line-height: 1.5;
+    }
+
+    /* How it works */
+    .how-it-works {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px 100px;
+      text-align: center;
+    }
+
+    .how-it-works h2 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 48px;
+      color: #c4b5fd;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      text-align: left;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .step-number {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #7c3aed, #a78bfa);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 20px;
+      color: white;
+    }
+
+    .step-text h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .step-text p {
+      color: #a5a0b8;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid rgba(124, 58, 237, 0.15);
+      color: #6b6580;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #a78bfa;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      .hero { padding: 60px 20px 60px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="logo">
+      <div class="logo-icon">W</div>
+      Wedgie Trivia
+    </a>
+    <a href="https://play.wedgietrivia.com" class="cta-nav">Play Now</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Trivia That Knows You</h1>
+    <p>AI-powered multiplayer trivia with questions personalized to you and your friends. Host a game night in seconds.</p>
+    <div class="hero-buttons">
+      <a href="https://play.wedgietrivia.com" class="btn-primary">Play Now</a>
+      <a href="#how" class="btn-secondary">How It Works</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <div class="feature-icon">&#129302;</div>
+      <h3>AI-Generated Questions</h3>
+      <p>Every game is unique. Questions are generated on the fly by AI, so you'll never see the same trivia twice.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">&#128101;</div>
+      <h3>Multiplayer</h3>
+      <p>Host a lobby, share the code, and play with up to 8 friends. Supports individuals or team mode.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">&#127919;</div>
+      <h3>Personal Questions</h3>
+      <p>Fill out your profile and get trivia questions about each other. "What's Sarah's favorite movie?"</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">&#127912;</div>
+      <h3>Custom Topics</h3>
+      <p>Pick any topic — 90s nostalgia, science, cooking, anime — and the AI builds a round around it.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">&#9889;</div>
+      <h3>Play Anywhere</h3>
+      <p>Works in your browser, on desktop, or mobile. The host shows the board, players answer on their devices.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">&#127942;</div>
+      <h3>Classic Board Game</h3>
+      <p>Collect wedges across categories by answering correctly. First to fill your pie wins.</p>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="how">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-text">
+          <h3>Create an account</h3>
+          <p>Sign up with email, Google, or play as a guest. Fill out your profile for personalized questions.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-text">
+          <h3>Host or join a game</h3>
+          <p>The host creates a lobby and gets a 5-letter code. Share it with friends to join.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-text">
+          <h3>Play!</h3>
+          <p>Roll the dice, land on categories, answer AI-generated trivia. Collect all your wedges to win.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Wedgie Trivia. Built with Godot &amp; Nakama.
+  </footer>
+
+</body>
+</html>
