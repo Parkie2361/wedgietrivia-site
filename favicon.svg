@@ -1,4 +1,128 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#7c3aed"/>
-  <text x="16" y="23" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="20" fill="white">W</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="-4 -6 32 34" fill="none">
+  <defs>
+    <filter id="outer-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="lift-shadow" x="-80%" y="-120%" width="300%" height="380%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.2" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="w-shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="1.2" stdDeviation="1" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+
+    <linearGradient id="grad-green" x1="0.4" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#44ee44"/>
+      <stop offset="40%" stop-color="#00A100"/>
+      <stop offset="100%" stop-color="#005500"/>
+    </linearGradient>
+    <linearGradient id="grad-pink" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#ff66cc"/>
+      <stop offset="45%" stop-color="#F2008F"/>
+      <stop offset="100%" stop-color="#880050"/>
+    </linearGradient>
+    <linearGradient id="grad-orange" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#ff9944"/>
+      <stop offset="45%" stop-color="#FF5200"/>
+      <stop offset="100%" stop-color="#992200"/>
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0.8" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#aa22aa"/>
+      <stop offset="45%" stop-color="#620062"/>
+      <stop offset="100%" stop-color="#300030"/>
+    </linearGradient>
+    <linearGradient id="grad-blue" x1="0.8" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#6688ff"/>
+      <stop offset="45%" stop-color="#2A65FF"/>
+      <stop offset="100%" stop-color="#0022aa"/>
+    </linearGradient>
+    <linearGradient id="grad-yellow" x1="0.6" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#ffff55"/>
+      <stop offset="45%" stop-color="#C5C500"/>
+      <stop offset="100%" stop-color="#777700"/>
+    </linearGradient>
+    <radialGradient id="gloss-top" cx="50%" cy="15%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grad-w" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#f0faff"/>
+      <stop offset="40%" stop-color="#7ecfff"/>
+      <stop offset="100%" stop-color="#2a8fcf"/>
+    </linearGradient>
+    <radialGradient id="ring-grad" cx="50%" cy="40%" r="55%">
+      <stop offset="75%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a18"/>
+    </radialGradient>
+
+    <!-- Clip to full pie circle -->
+    <clipPath id="clip-pie">
+      <circle cx="12" cy="12" r="10"/>
+    </clipPath>
+    <!-- Clip lifted wedge shadow inside outer ring -->
+    <clipPath id="clip-outer">
+      <circle cx="12" cy="12" r="11"/>
+    </clipPath>
+    <clipPath id="clip-w">
+      <path d="M4.5,9 Q4,9 4,9.5 L7.5,18.5 Q7.8,19.2 8.5,19.2 L9.8,19.2 Q10.5,19.2 10.8,18.5 L12,15.5 L13.2,18.5 Q13.5,19.2 14.2,19.2 L15.5,19.2 Q16.2,19.2 16.5,18.5 L20,9.5 Q20,9 19.5,9 L18.2,9 Q17.5,9 17.2,9.8 L14.5,16.8 L12,11.5 L9.5,16.8 L6.8,9.8 Q6.5,9 5.8,9 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer dark ring -->
+  <circle cx="12" cy="12" r="11" fill="url(#ring-grad)" filter="url(#outer-shadow)"/>
+  <circle cx="12" cy="12" r="10.3" fill="#111122"/>
+
+  <!-- Base 5 wedges, all using r=10, center (12,12) -->
+  <!-- Points: -90°=(12,2)  -30°=(20.66,7)  30°=(20.66,17)  90°=(12,22)  150°=(3.34,17)  210°=(3.34,7) -->
+  <g clip-path="url(#clip-pie)">
+    <path d="M12,12 L20.66,7  A10,10 0 0,1 20.66,17 Z" fill="url(#grad-pink)"/>
+    <path d="M12,12 L20.66,17 A10,10 0 0,1 12,22 Z"    fill="url(#grad-orange)"/>
+    <path d="M12,12 L12,22    A10,10 0 0,1 3.34,17 Z"  fill="url(#grad-purple)"/>
+    <path d="M12,12 L3.34,17  A10,10 0 0,1 3.34,7 Z"   fill="url(#grad-blue)"/>
+    <path d="M12,12 L3.34,7   A10,10 0 0,1 12,2 Z"     fill="url(#grad-yellow)"/>
+  </g>
+
+  <!-- Dividers -->
+  <g clip-path="url(#clip-pie)" stroke="#111122" stroke-width="0.5" stroke-linecap="square">
+    <line x1="12" y1="12" x2="20.66" y2="7"/>
+    <line x1="12" y1="12" x2="20.66" y2="17"/>
+    <line x1="12" y1="12" x2="12"    y2="22"/>
+    <line x1="12" y1="12" x2="3.34"  y2="17"/>
+    <line x1="12" y1="12" x2="3.34"  y2="7"/>
+    <line x1="12" y1="12" x2="12"    y2="2"/>
+  </g>
+
+  <!-- Gloss on base -->
+  <circle cx="12" cy="12" r="10" fill="url(#gloss-top)"/>
+  <circle cx="12" cy="12" r="10" fill="none" stroke="#111122" stroke-width="0.5"/>
+
+  <!-- Dark slot at green wedge position -->
+  <path d="M12,12 L12,2 A10,10 0 0,1 20.66,7 Z" fill="#0a0a18" clip-path="url(#clip-pie)"/>
+
+  <!--
+    Lifted green wedge. The key insight:
+    - Use transform="translate(0,-1.5)" on the ENTIRE wedge group
+    - This shifts apex + arc center together, making a self-consistent shape
+    - The arc won't perfectly align with the other wedges' outer edge
+      but the GAP is hidden by the dark slot and clipping to the outer circle
+    - This is how the reference image works — the wedge just pops out cleanly
+  -->
+  <g clip-path="url(#clip-outer)">
+    <g filter="url(#lift-shadow)" transform="translate(0,-1.5)">
+      <path d="M12,12 L12,2 A10,10 0 0,1 20.66,7 Z" fill="url(#grad-green)"/>
+      <path d="M12,12 L12,2 A10,10 0 0,1 20.66,7 Z" fill="url(#gloss-top)"/>
+    </g>
+    <g transform="translate(0,-1.5)">
+      <line x1="12" y1="12" x2="12"    y2="2"   stroke="#111122" stroke-width="0.5" stroke-linecap="square"/>
+      <line x1="12" y1="12" x2="20.66" y2="7"   stroke="#111122" stroke-width="0.5" stroke-linecap="square"/>
+      <path d="M12,2 A10,10 0 0,1 20.66,7" fill="none" stroke="#111122" stroke-width="0.5"/>
+    </g>
+  </g>
+
+  <!-- W navy base -->
+  <path d="M4.5,9 Q4,9 4,9.5 L7.5,18.5 Q7.8,19.2 8.5,19.2 L9.8,19.2 Q10.5,19.2 10.8,18.5 L12,15.5 L13.2,18.5 Q13.5,19.2 14.2,19.2 L15.5,19.2 Q16.2,19.2 16.5,18.5 L20,9.5 Q20,9 19.5,9 L18.2,9 Q17.5,9 17.2,9.8 L14.5,16.8 L12,11.5 L9.5,16.8 L6.8,9.8 Q6.5,9 5.8,9 Z"
+    fill="#0d1a40" stroke="#0d1a40" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
+    filter="url(#w-shadow)"/>
+  <!-- W gradient fill -->
+  <path d="M4.5,9 Q4,9 4,9.5 L7.5,18.5 Q7.8,19.2 8.5,19.2 L9.8,19.2 Q10.5,19.2 10.8,18.5 L12,15.5 L13.2,18.5 Q13.5,19.2 14.2,19.2 L15.5,19.2 Q16.2,19.2 16.5,18.5 L20,9.5 Q20,9 19.5,9 L18.2,9 Q17.5,9 17.2,9.8 L14.5,16.8 L12,11.5 L9.5,16.8 L6.8,9.8 Q6.5,9 5.8,9 Z"
+    fill="url(#grad-w)"/>
 </svg>
