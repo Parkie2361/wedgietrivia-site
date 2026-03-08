@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="128"
+   height="128"
+   viewBox="-4 -6 32 34"
+   fill="none"
+   version="1.1"
+   id="svg48"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview48"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="26.582796"
+     inkscape:cx="75.123777"
+     inkscape:cy="34.740515"
+     inkscape:window-width="2560"
+     inkscape:window-height="1412"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg48" />
+  <defs
+     id="defs31">
+    <!-- SVG 1.1 compatible drop shadow filters -->
+    <filter
+       id="outer-shadow"
+       x="-0.21818182"
+       y="-0.21818182"
+       width="1.4363636"
+       height="1.5272727">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="2"
+         result="blur"
+         id="feGaussianBlur1" />
+      <feOffset
+         dx="0"
+         dy="2"
+         result="offsetBlur"
+         id="feOffset1" />
+      <feFlood
+         flood-color="#000000"
+         flood-opacity="0.4"
+         result="color"
+         id="feFlood1" />
+      <feComposite
+         in="color"
+         in2="offsetBlur"
+         operator="in"
+         result="shadow"
+         id="feComposite1" />
+      <feMerge
+         id="feMerge2">
+        <feMergeNode
+           in="shadow"
+           id="feMergeNode1" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode2" />
+      </feMerge>
+    </filter>
+    <filter
+       id="lift-shadow"
+       x="-0.33256352"
+       y="-0.28800001"
+       width="1.665127"
+       height="1.776">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="1.2"
+         result="blur"
+         id="feGaussianBlur2" />
+      <feOffset
+         dx="0"
+         dy="2"
+         result="offsetBlur"
+         id="feOffset2" />
+      <feFlood
+         flood-color="#000000"
+         flood-opacity="0.6"
+         result="color"
+         id="feFlood2" />
+      <feComposite
+         in="color"
+         in2="offsetBlur"
+         operator="in"
+         result="shadow"
+         id="feComposite2" />
+      <feMerge
+         id="feMerge4">
+        <feMergeNode
+           in="shadow"
+           id="feMergeNode3" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode4" />
+      </feMerge>
+    </filter>
+    <filter
+       id="w-shadow"
+       x="-0.2125"
+       y="-0.33333333"
+       width="1.425"
+       height="1.7843137">
+      <feGaussianBlur
+         in="SourceAlpha"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur4" />
+      <feOffset
+         dx="0"
+         dy="1.2"
+         result="offsetBlur"
+         id="feOffset4" />
+      <feFlood
+         flood-color="#000000"
+         flood-opacity="0.55"
+         result="color"
+         id="feFlood4" />
+      <feComposite
+         in="color"
+         in2="offsetBlur"
+         operator="in"
+         result="shadow"
+         id="feComposite4" />
+      <feMerge
+         id="feMerge6">
+        <feMergeNode
+           in="shadow"
+           id="feMergeNode5" />
+        <feMergeNode
+           in="SourceGraphic"
+           id="feMergeNode6" />
+      </feMerge>
+    </filter>
+    <linearGradient
+       id="grad-green"
+       x1="0.4"
+       y1="0"
+       x2="0.6"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#44ee44"
+         id="stop6" />
+      <stop
+         offset="40%"
+         stop-color="#00A100"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#005500"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="grad-pink"
+       x1="0.2"
+       y1="0"
+       x2="0.8"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#ff66cc"
+         id="stop9" />
+      <stop
+         offset="45%"
+         stop-color="#F2008F"
+         id="stop10" />
+      <stop
+         offset="100%"
+         stop-color="#880050"
+         id="stop11" />
+    </linearGradient>
+    <linearGradient
+       id="grad-orange"
+       x1="0.2"
+       y1="0"
+       x2="0.8"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#ff9944"
+         id="stop12" />
+      <stop
+         offset="45%"
+         stop-color="#FF5200"
+         id="stop13" />
+      <stop
+         offset="100%"
+         stop-color="#992200"
+         id="stop14" />
+    </linearGradient>
+    <linearGradient
+       id="grad-purple"
+       x1="0.8"
+       y1="0"
+       x2="0.2"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#aa22aa"
+         id="stop15" />
+      <stop
+         offset="45%"
+         stop-color="#620062"
+         id="stop16" />
+      <stop
+         offset="100%"
+         stop-color="#300030"
+         id="stop17" />
+    </linearGradient>
+    <linearGradient
+       id="grad-blue"
+       x1="0.8"
+       y1="0"
+       x2="0.2"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#6688ff"
+         id="stop18" />
+      <stop
+         offset="45%"
+         stop-color="#2A65FF"
+         id="stop19" />
+      <stop
+         offset="100%"
+         stop-color="#0022aa"
+         id="stop20" />
+    </linearGradient>
+    <linearGradient
+       id="grad-yellow"
+       x1="0.6"
+       y1="0"
+       x2="0.4"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#ffff55"
+         id="stop21" />
+      <stop
+         offset="45%"
+         stop-color="#C5C500"
+         id="stop22" />
+      <stop
+         offset="100%"
+         stop-color="#777700"
+         id="stop23" />
+    </linearGradient>
+    <radialGradient
+       id="gloss-top"
+       cx="50%"
+       cy="15%"
+       r="50%">
+      <stop
+         offset="0%"
+         stop-color="#ffffff"
+         stop-opacity="0.55"
+         id="stop24" />
+      <stop
+         offset="100%"
+         stop-color="#ffffff"
+         stop-opacity="0"
+         id="stop25" />
+    </radialGradient>
+    <linearGradient
+       id="grad-w"
+       x1="0.5"
+       y1="0"
+       x2="0.5"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#f0faff"
+         id="stop26" />
+      <stop
+         offset="40%"
+         stop-color="#7ecfff"
+         id="stop27" />
+      <stop
+         offset="100%"
+         stop-color="#2a8fcf"
+         id="stop28" />
+    </linearGradient>
+    <radialGradient
+       id="ring-grad"
+       cx="50%"
+       cy="40%"
+       r="55%">
+      <stop
+         offset="75%"
+         stop-color="#1a1a2e"
+         id="stop29" />
+      <stop
+         offset="100%"
+         stop-color="#0a0a18"
+         id="stop30" />
+    </radialGradient>
+    <clipPath
+       id="clip-pie">
+      <circle
+         cx="12"
+         cy="12"
+         r="10"
+         id="circle30" />
+    </clipPath>
+    <clipPath
+       id="clip-outer">
+      <circle
+         cx="12"
+         cy="12"
+         r="11"
+         id="circle31" />
+    </clipPath>
+  </defs>
+  <!-- Outer dark ring -->
+  <circle
+     cx="12"
+     cy="12"
+     r="11"
+     fill="url(#ring-grad)"
+     filter="url(#outer-shadow)"
+     id="circle32" />
+  <circle
+     cx="12"
+     cy="12"
+     r="10.3"
+     fill="#111122"
+     id="circle33" />
+  <!-- Base 5 wedges -->
+  <g
+     clip-path="url(#clip-pie)"
+     id="g37">
+    <path
+       d="M12,12 L20.66,7  A10,10 0 0,1 20.66,17 Z"
+       fill="url(#grad-pink)"
+       id="path33" />
+    <path
+       d="M12,12 L20.66,17 A10,10 0 0,1 12,22 Z"
+       fill="url(#grad-orange)"
+       id="path34" />
+    <path
+       d="M12,12 L12,22    A10,10 0 0,1 3.34,17 Z"
+       fill="url(#grad-purple)"
+       id="path35" />
+    <path
+       d="M12,12 L3.34,17  A10,10 0 0,1 3.34,7 Z"
+       fill="url(#grad-blue)"
+       id="path36" />
+    <path
+       d="M12,12 L3.34,7   A10,10 0 0,1 12,2 Z"
+       fill="url(#grad-yellow)"
+       id="path37" />
+  </g>
+  <!-- Dividers -->
+  <g
+     clip-path="url(#clip-pie)"
+     stroke="#111122"
+     stroke-width="0.5"
+     stroke-linecap="square"
+     id="g42">
+    <line
+       x1="12"
+       y1="12"
+       x2="20.66"
+       y2="7"
+       id="line37" />
+    <line
+       x1="12"
+       y1="12"
+       x2="20.66"
+       y2="17"
+       id="line38" />
+    <line
+       x1="12"
+       y1="12"
+       x2="12"
+       y2="22"
+       id="line39" />
+    <line
+       x1="12"
+       y1="12"
+       x2="3.34"
+       y2="17"
+       id="line40" />
+    <line
+       x1="12"
+       y1="12"
+       x2="3.34"
+       y2="7"
+       id="line41" />
+    <line
+       x1="12"
+       y1="12"
+       x2="12"
+       y2="2"
+       id="line42" />
+  </g>
+  <!-- Gloss on base -->
+  <circle
+     cx="12"
+     cy="12"
+     r="10"
+     fill="url(#gloss-top)"
+     id="circle42" />
+  <circle
+     cx="12"
+     cy="12"
+     r="10"
+     fill="none"
+     stroke="#111122"
+     stroke-width="0.5"
+     id="circle43" />
+  <!-- Dark slot at green wedge position -->
+  <path
+     d="M12,12 L12,2 A10,10 0 0,1 20.66,7 Z"
+     fill="#0a0a18"
+     clip-path="url(#clip-pie)"
+     id="path43" />
+  <!-- Lifted green wedge — pre-computed coordinates shifted up by 1.5 -->
+  <g
+     clip-path="url(#clip-outer)"
+     id="g46">
+    <g
+       filter="url(#lift-shadow)"
+       id="g45">
+      <path
+         d="M12,10.5 L12,0.5 A10,10 0 0,1 20.66,5.5 Z"
+         fill="url(#grad-green)"
+         id="path44" />
+      <path
+         d="M12,10.5 L12,0.5 A10,10 0 0,1 20.66,5.5 Z"
+         fill="url(#gloss-top)"
+         id="path45" />
+    </g>
+    <path
+       d="m 12,10.5 -0.07994,-9.3504963 c 3.42268,0.2099305 7.01361,1.5063732 8.799893,4.6003054 z"
+       fill="none"
+       stroke="#111122"
+       stroke-width="0.5"
+       stroke-linejoin="round"
+       id="path46"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <!-- W navy base -->
+  <path
+     d="M4.5,9 Q4,9 4,9.5 L7.5,18.5 Q7.8,19.2 8.5,19.2 L9.8,19.2 Q10.5,19.2 10.8,18.5 L12,15.5 L13.2,18.5 Q13.5,19.2 14.2,19.2 L15.5,19.2 Q16.2,19.2 16.5,18.5 L20,9.5 Q20,9 19.5,9 L18.2,9 Q17.5,9 17.2,9.8 L14.5,16.8 L12,11.5 L9.5,16.8 L6.8,9.8 Q6.5,9 5.8,9 Z"
+     fill="#0d1a40"
+     stroke="#0d1a40"
+     stroke-width="2"
+     stroke-linejoin="round"
+     stroke-linecap="round"
+     filter="url(#w-shadow)"
+     id="path47" />
+  <!-- W gradient fill -->
+  <path
+     d="M4.5,9 Q4,9 4,9.5 L7.5,18.5 Q7.8,19.2 8.5,19.2 L9.8,19.2 Q10.5,19.2 10.8,18.5 L12,15.5 L13.2,18.5 Q13.5,19.2 14.2,19.2 L15.5,19.2 Q16.2,19.2 16.5,18.5 L20,9.5 Q20,9 19.5,9 L18.2,9 Q17.5,9 17.2,9.8 L14.5,16.8 L12,11.5 L9.5,16.8 L6.8,9.8 Q6.5,9 5.8,9 Z"
+     fill="url(#grad-w)"
+     id="path48" />
+</svg>
