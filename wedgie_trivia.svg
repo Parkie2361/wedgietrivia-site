@@ -6,10 +6,11 @@
    fill="none"
    version="1.1"
    id="svg48"
-   sodipodi:docname="favicon.svg"
+   sodipodi:docname="wedgie_trivia.svg"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -21,15 +22,15 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="26.582796"
-     inkscape:cx="75.123777"
-     inkscape:cy="34.740515"
+     inkscape:zoom="13.291398"
+     inkscape:cx="83.96408"
+     inkscape:cy="35.097888"
      inkscape:window-width="2560"
      inkscape:window-height="1412"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg48" />
+     inkscape:current-layer="g46" />
   <defs
      id="defs31">
     <!-- SVG 1.1 compatible drop shadow filters -->
@@ -72,9 +73,9 @@
     </filter>
     <filter
        id="lift-shadow"
-       x="-0.33256352"
+       x="-0.33200318"
        y="-0.28800001"
-       width="1.665127"
+       width="1.6640064"
        height="1.776">
       <feGaussianBlur
          in="SourceAlpha"
@@ -146,10 +147,12 @@
     </filter>
     <linearGradient
        id="grad-green"
-       x1="0.4"
-       y1="0"
-       x2="0.6"
-       y2="1">
+       x1="16.617393"
+       y1="0.4652956"
+       x2="18.478576"
+       y2="9.7712077"
+       gradientTransform="scale(0.93059121,1.0745857)"
+       gradientUnits="userSpaceOnUse">
       <stop
          offset="0%"
          stop-color="#44ee44"
@@ -165,10 +168,12 @@
     </linearGradient>
     <linearGradient
        id="grad-pink"
-       x1="0.2"
-       y1="0"
-       x2="0.8"
-       y2="1">
+       x1="14.000127"
+       y1="6.9999111"
+       x2="20.000051"
+       y2="16.999784"
+       gradientTransform="scale(0.9999873,1.0000127)"
+       gradientUnits="userSpaceOnUse">
       <stop
          offset="0%"
          stop-color="#ff66cc"
@@ -184,10 +189,12 @@
     </linearGradient>
     <linearGradient
        id="grad-orange"
-       x1="0.2"
-       y1="0"
-       x2="0.8"
-       y2="1">
+       x1="14.756211"
+       y1="11.167095"
+       x2="20.339758"
+       y2="20.473007"
+       gradientTransform="scale(0.93059121,1.0745857)"
+       gradientUnits="userSpaceOnUse">
       <stop
          offset="0%"
          stop-color="#ff9944"
@@ -203,10 +210,12 @@
     </linearGradient>
     <linearGradient
        id="grad-purple"
-       x1="0.8"
-       y1="0"
-       x2="0.2"
-       y2="1">
+       x1="11.033846"
+       y1="11.167095"
+       x2="5.4502987"
+       y2="20.473007"
+       gradientTransform="scale(0.93059121,1.0745857)"
+       gradientUnits="userSpaceOnUse">
       <stop
          offset="0%"
          stop-color="#aa22aa"
@@ -222,10 +231,12 @@
     </linearGradient>
     <linearGradient
        id="grad-blue"
-       x1="0.8"
-       y1="0"
-       x2="0.2"
-       y2="1">
+       x1="10.000178"
+       y1="6.9999111"
+       x2="4.0002541"
+       y2="16.999784"
+       gradientTransform="scale(0.9999873,1.0000127)"
+       gradientUnits="userSpaceOnUse">
       <stop
          offset="0%"
          stop-color="#6688ff"
@@ -241,10 +252,12 @@
     </linearGradient>
     <linearGradient
        id="grad-yellow"
-       x1="0.6"
-       y1="0"
-       x2="0.4"
-       y2="1">
+       x1="9.1726637"
+       y1="1.8611824"
+       x2="7.3114811"
+       y2="11.167095"
+       gradientTransform="scale(0.93059121,1.0745857)"
+       gradientUnits="userSpaceOnUse">
       <stop
          offset="0%"
          stop-color="#ffff55"
@@ -276,10 +289,12 @@
     </radialGradient>
     <linearGradient
        id="grad-w"
-       x1="0.5"
-       y1="0"
-       x2="0.5"
-       y2="1">
+       x1="9.5812317"
+       y1="11.272037"
+       x2="9.5812317"
+       y2="24.047013"
+       gradientTransform="matrix(1.7124795,0,0,1.0917057,-4.4526776,-4.7886152)"
+       gradientUnits="userSpaceOnUse">
       <stop
          offset="0%"
          stop-color="#f0faff"
@@ -295,9 +310,13 @@
     </linearGradient>
     <radialGradient
        id="ring-grad"
-       cx="50%"
-       cy="40%"
-       r="55%">
+       cx="12.373921"
+       cy="9.3486937"
+       r="17.921562"
+       gradientTransform="scale(0.96978151,1.0311601)"
+       fx="12.373921"
+       fy="9.3486937"
+       gradientUnits="userSpaceOnUse">
       <stop
          offset="75%"
          stop-color="#1a1a2e"
@@ -323,6 +342,28 @@
          r="11"
          id="circle31" />
     </clipPath>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#gloss-top"
+       id="radialGradient48"
+       cx="17.547984"
+       cy="1.8611825"
+       r="4.652956"
+       gradientTransform="scale(0.93059121,1.0745857)"
+       fx="17.547984"
+       fy="1.8611825"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#gloss-top"
+       id="radialGradient1"
+       cx="12"
+       cy="5.0000001"
+       r="10"
+       fx="12"
+       fy="5.0000001"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.3673052,0,0,1.3673052,-4.4526776,-4.7886152)" />
   </defs>
   <!-- Outer dark ring -->
   <circle
@@ -331,37 +372,46 @@
      r="11"
      fill="url(#ring-grad)"
      filter="url(#outer-shadow)"
-     id="circle32" />
+     id="circle32"
+     style="fill:url(#ring-grad)"
+     transform="matrix(1.3673052,0,0,1.3673052,-4.4526777,-4.7886152)" />
   <circle
-     cx="12"
-     cy="12"
-     r="10.3"
+     cx="11.954985"
+     cy="11.619051"
      fill="#111122"
-     id="circle33" />
+     id="circle33"
+     r="14.083244"
+     style="stroke-width:1.36731" />
   <!-- Base 5 wedges -->
   <g
      clip-path="url(#clip-pie)"
-     id="g37">
+     id="g37"
+     transform="matrix(1.3673052,0,0,1.3673052,-4.4526777,-4.7886152)">
     <path
-       d="M12,12 L20.66,7  A10,10 0 0,1 20.66,17 Z"
+       d="m 12,12 8.66,-5 a 10,10 0 0 1 0,10 z"
        fill="url(#grad-pink)"
-       id="path33" />
+       id="path33"
+       style="fill:url(#grad-pink)" />
     <path
-       d="M12,12 L20.66,17 A10,10 0 0,1 12,22 Z"
+       d="m 12,12 8.66,5 A 10,10 0 0 1 12,22 Z"
        fill="url(#grad-orange)"
-       id="path34" />
+       id="path34"
+       style="fill:url(#grad-orange)" />
     <path
-       d="M12,12 L12,22    A10,10 0 0,1 3.34,17 Z"
+       d="M 12,12 V 22 A 10,10 0 0 1 3.34,17 Z"
        fill="url(#grad-purple)"
-       id="path35" />
+       id="path35"
+       style="fill:url(#grad-purple)" />
     <path
-       d="M12,12 L3.34,17  A10,10 0 0,1 3.34,7 Z"
+       d="m 12,12 -8.66,5 a 10,10 0 0 1 0,-10 z"
        fill="url(#grad-blue)"
-       id="path36" />
+       id="path36"
+       style="fill:url(#grad-blue)" />
     <path
-       d="M12,12 L3.34,7   A10,10 0 0,1 12,2 Z"
+       d="M 12,12 3.34,7 A 10,10 0 0 1 12,2 Z"
        fill="url(#grad-yellow)"
-       id="path37" />
+       id="path37"
+       style="fill:url(#grad-yellow)" />
   </g>
   <!-- Dividers -->
   <g
@@ -369,7 +419,8 @@
      stroke="#111122"
      stroke-width="0.5"
      stroke-linecap="square"
-     id="g42">
+     id="g42"
+     transform="matrix(1.3673052,0,0,1.3673052,-4.4526777,-4.7886152)">
     <line
        x1="12"
        y1="12"
@@ -391,13 +442,13 @@
     <line
        x1="12"
        y1="12"
-       x2="3.34"
+       x2="3.3399999"
        y2="17"
        id="line40" />
     <line
        x1="12"
        y1="12"
-       x2="3.34"
+       x2="3.3399999"
        y2="7"
        id="line41" />
     <line
@@ -409,43 +460,50 @@
   </g>
   <!-- Gloss on base -->
   <circle
-     cx="12"
-     cy="12"
-     r="10"
+     cx="11.954985"
+     cy="11.619051"
      fill="url(#gloss-top)"
-     id="circle42" />
+     id="circle42"
+     r="13.673053"
+     style="fill:url(#radialGradient1);stroke-width:1.36731" />
   <circle
-     cx="12"
-     cy="12"
-     r="10"
+     cx="11.954985"
+     cy="11.619051"
      fill="none"
      stroke="#111122"
-     stroke-width="0.5"
-     id="circle43" />
+     stroke-width="0.683653"
+     id="circle43"
+     r="13.673053" />
   <!-- Dark slot at green wedge position -->
   <path
-     d="M12,12 L12,2 A10,10 0 0,1 20.66,7 Z"
+     d="M 12,12 V 2 a 10,10 0 0 1 8.66,5 z"
      fill="#0a0a18"
      clip-path="url(#clip-pie)"
-     id="path43" />
+     id="path43"
+     transform="matrix(1.4096973,0,0,1.3673052,-5.3284975,-4.7886152)" />
   <!-- Lifted green wedge — pre-computed coordinates shifted up by 1.5 -->
   <g
      clip-path="url(#clip-outer)"
-     id="g46">
+     id="g46"
+     transform="matrix(1.3673052,0,0,1.3673052,-3.0947345,-6.1489372)">
     <g
        filter="url(#lift-shadow)"
        id="g45">
       <path
-         d="M12,10.5 L12,0.5 A10,10 0 0,1 20.66,5.5 Z"
+         d="M 12,10.5 V 1.3185041 c 3.572565,9.07e-5 6.756788,1.4968158 8.543071,4.5907479 z"
          fill="url(#grad-green)"
-         id="path44" />
+         id="path44"
+         style="fill:url(#grad-green)"
+         sodipodi:nodetypes="cccc" />
       <path
-         d="M12,10.5 L12,0.5 A10,10 0 0,1 20.66,5.5 Z"
+         d="M 11.985384,10.368455 12,0.5 c 3.572565,9.076e-5 6.873717,1.9060678 8.66,5 z"
          fill="url(#gloss-top)"
-         id="path45" />
+         id="path45"
+         style="fill:url(#radialGradient48)"
+         sodipodi:nodetypes="cccc" />
     </g>
     <path
-       d="m 12,10.5 -0.07994,-9.3504963 c 3.42268,0.2099305 7.01361,1.5063732 8.799893,4.6003054 z"
+       d="M 12,10.5 11.92006,1.1495037 c 3.641922,0.1368498 6.998993,1.8571607 8.799893,4.6003054 z"
        fill="none"
        stroke="#111122"
        stroke-width="0.5"
@@ -455,17 +513,19 @@
   </g>
   <!-- W navy base -->
   <path
-     d="M4.5,9 Q4,9 4,9.5 L7.5,18.5 Q7.8,19.2 8.5,19.2 L9.8,19.2 Q10.5,19.2 10.8,18.5 L12,15.5 L13.2,18.5 Q13.5,19.2 14.2,19.2 L15.5,19.2 Q16.2,19.2 16.5,18.5 L20,9.5 Q20,9 19.5,9 L18.2,9 Q17.5,9 17.2,9.8 L14.5,16.8 L12,11.5 L9.5,16.8 L6.8,9.8 Q6.5,9 5.8,9 Z"
+     d="M 4.5,9 Q 4,9 4,9.5 l 3.5,9 q 0.3,0.7 1,0.7 h 1.3 q 0.7,0 1,-0.7 l 1.2,-3 1.2,3 q 0.3,0.7 1,0.7 h 1.3 q 0.7,0 1,-0.7 L 20,9.5 Q 20,9 19.5,9 h -1.3 q -0.7,0 -1,0.8 l -2.7,7 L 12,11.5 9.5,16.8 6.8,9.8 Q 6.5,9 5.8,9 Z"
      fill="#0d1a40"
      stroke="#0d1a40"
      stroke-width="2"
      stroke-linejoin="round"
      stroke-linecap="round"
      filter="url(#w-shadow)"
-     id="path47" />
+     id="path47"
+     transform="matrix(1.3673052,0,0,1.3673052,-4.4526777,-4.7886152)" />
   <!-- W gradient fill -->
   <path
-     d="M4.5,9 Q4,9 4,9.5 L7.5,18.5 Q7.8,19.2 8.5,19.2 L9.8,19.2 Q10.5,19.2 10.8,18.5 L12,15.5 L13.2,18.5 Q13.5,19.2 14.2,19.2 L15.5,19.2 Q16.2,19.2 16.5,18.5 L20,9.5 Q20,9 19.5,9 L18.2,9 Q17.5,9 17.2,9.8 L14.5,16.8 L12,11.5 L9.5,16.8 L6.8,9.8 Q6.5,9 5.8,9 Z"
+     d="m 1.700196,7.517132 q -0.6836527,0 -0.6836527,0.683653 l 4.7855682,12.305737 q 0.410192,0.957114 1.367305,0.957114 h 1.777497 q 0.957114,0 1.3673045,-0.957114 l 1.640767,-4.101916 1.640766,4.101916 q 0.410192,0.957114 1.367305,0.957114 h 1.777498 q 0.957113,0 1.367305,-0.957114 L 22.893427,8.200785 q 0,-0.683653 -0.683653,-0.683653 h -1.777497 q -0.957113,0 -1.367305,1.093845 L 15.373248,18.182103 11.954985,10.935385 8.5367225,18.182103 4.8449984,8.610977 Q 4.4348061,7.517132 3.4776926,7.517132 Z"
      fill="url(#grad-w)"
-     id="path48" />
+     id="path48"
+     style="fill:url(#grad-w);stroke-width:1.36731" />
 </svg>
