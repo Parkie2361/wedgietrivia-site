@@ -108,7 +108,7 @@
 
         async function initCheckout(secret) {
             try {
-                const stripe = Stripe('PUBLISHABLE_KEY_HERE');
+                const stripe = Stripe('pk_live_51T5z3fFErKEwixTtYQN1uYYBbD25fMvhiUVjja3fv50eJIaiJMSjFliwtY5k4m3a1yMLZeevd49pHt1BfLYhOm5G00G4cXTa6E');
                 const checkout = await stripe.initEmbeddedCheckout({
                     clientSecret: secret
                 });
