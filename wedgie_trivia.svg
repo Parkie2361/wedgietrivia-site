@@ -371,7 +371,6 @@
      cy="12"
      r="11"
      fill="url(#ring-grad)"
-     filter="url(#outer-shadow)"
      id="circle32"
      style="fill:url(#ring-grad)"
      transform="matrix(1.3673052,0,0,1.3673052,-4.4526777,-4.7886152)" />
@@ -487,7 +486,6 @@
      id="g46"
      transform="matrix(1.3673052,0,0,1.3673052,-3.0947345,-6.1489372)">
     <g
-       filter="url(#lift-shadow)"
        id="g45">
       <path
          d="M 12,10.5 V 1.3185041 c 3.572565,9.07e-5 6.756788,1.4968158 8.543071,4.5907479 z"
@@ -519,7 +517,6 @@
      stroke-width="2"
      stroke-linejoin="round"
      stroke-linecap="round"
-     filter="url(#w-shadow)"
      id="path47"
      transform="matrix(1.3673052,0,0,1.3673052,-4.4526777,-4.7886152)" />
   <!-- W gradient fill -->
