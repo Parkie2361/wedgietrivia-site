@@ -4,14 +4,14 @@
 <radialGradient id="wt-glosstop" cx="50%" cy="16%" r="48%"><stop offset="0%" stop-color="#ffffff" stop-opacity="0.24"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
 <radialGradient id="wt-gloss1" xlink:href="#wt-glosstop" cx="12" cy="5" r="10" gradientTransform="matrix(1.3673052,0,0,1.3673052,-4.4526776,-4.7886152)" gradientUnits="userSpaceOnUse"/>
 <linearGradient id="wt-w" x1="9.5812317" y1="11.272037" x2="9.5812317" y2="24.047013" gradientTransform="matrix(1.7124795,0,0,1.0917057,-4.4526776,-4.7886152)" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#f0faff"/><stop offset="40%" stop-color="#7ecfff"/><stop offset="100%" stop-color="#2a8fcf"/></linearGradient>
-<radialGradient id="wt-green" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#004000"/><stop offset="45%" stop-color="#007a00"/><stop offset="100%" stop-color="#2fb02f"/></radialGradient>
-<radialGradient id="wt-cyan" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00505a"/><stop offset="45%" stop-color="#009aa4"/><stop offset="100%" stop-color="#3ec2cc"/></radialGradient>
-<radialGradient id="wt-blue" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#001a88"/><stop offset="45%" stop-color="#2050dd"/><stop offset="100%" stop-color="#4f74ee"/></radialGradient>
-<radialGradient id="wt-purple" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#2c0840"/><stop offset="45%" stop-color="#5f1a94"/><stop offset="100%" stop-color="#9042cc"/></radialGradient>
-<radialGradient id="wt-pink" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6e0040"/><stop offset="45%" stop-color="#c60077"/><stop offset="100%" stop-color="#e64fb0"/></radialGradient>
-<radialGradient id="wt-red" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#6e0000"/><stop offset="45%" stop-color="#bf0c0c"/><stop offset="100%" stop-color="#e44040"/></radialGradient>
-<radialGradient id="wt-orange" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#7a1c00"/><stop offset="45%" stop-color="#dd4700"/><stop offset="100%" stop-color="#f2842f"/></radialGradient>
-<radialGradient id="wt-yellow" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#606000"/><stop offset="45%" stop-color="#aaaa00"/><stop offset="100%" stop-color="#dede30"/></radialGradient>
+<radialGradient id="wt-green" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#005500"/><stop offset="45%" stop-color="#00A100"/><stop offset="100%" stop-color="#44ee44"/></radialGradient>
+<radialGradient id="wt-cyan" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#005a66"/><stop offset="45%" stop-color="#00b0c4"/><stop offset="100%" stop-color="#4fe4f0"/></radialGradient>
+<radialGradient id="wt-blue" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#0022aa"/><stop offset="45%" stop-color="#2A65FF"/><stop offset="100%" stop-color="#6688ff"/></radialGradient>
+<radialGradient id="wt-purple" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#300030"/><stop offset="45%" stop-color="#620062"/><stop offset="100%" stop-color="#aa22aa"/></radialGradient>
+<radialGradient id="wt-pink" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#880050"/><stop offset="45%" stop-color="#F2008F"/><stop offset="100%" stop-color="#ff66cc"/></radialGradient>
+<radialGradient id="wt-red" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#7a0000"/><stop offset="45%" stop-color="#e01212"/><stop offset="100%" stop-color="#ff5a5a"/></radialGradient>
+<radialGradient id="wt-orange" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#992200"/><stop offset="45%" stop-color="#FF5200"/><stop offset="100%" stop-color="#ff9944"/></radialGradient>
+<radialGradient id="wt-yellow" cx="12" cy="12" r="10" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#777700"/><stop offset="45%" stop-color="#C5C500"/><stop offset="100%" stop-color="#ffff55"/></radialGradient>
 <clipPath id="wt-pie"><circle cx="12" cy="12" r="10"/></clipPath>
 </defs>
 <circle cx="12" cy="12" r="11" fill="url(#wt-ring)" transform="matrix(1.3673052,0,0,1.3673052,-4.4526777,-4.7886152)"/>
