@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4795564125968435" crossorigin="anonymous"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Play — Wedgie Trivia</title>
+  <meta name="description" content="A full guide to every way to play Wedgie Trivia: the Wedgie board game, Classic quiz race, Heads Up, and Imposter — rules, scoring, and tips for each mode.">
+  <link rel="icon" type="image/svg+xml" href="wedgie_trivia.svg">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0612;
+      color: #e8e6f0;
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(88, 28, 135, 0.15) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 80%, rgba(167, 139, 250, 0.08) 0%, transparent 50%);
+      z-index: -1;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: 700;
+      color: #c4b5fd;
+      text-decoration: none;
+    }
+
+    .logo-icon { width: 44px; height: 44px; }
+
+    .nav-links { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+    .nav-links a { color: #a5a0b8; text-decoration: none; font-size: 15px; font-weight: 600; }
+    .nav-links a:hover { color: #c4b5fd; }
+
+    nav a.cta-nav {
+      background: #7c3aed;
+      color: white;
+      padding: 10px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: background 0.2s;
+    }
+
+    nav a.cta-nav:hover { background: #6d28d9; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 24px 100px; }
+
+    h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #e8e6f0 0%, #c4b5fd 50%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .intro { font-size: 18px; color: #a5a0b8; margin-bottom: 48px; max-width: 640px; }
+
+    .mode {
+      background: rgba(30, 20, 45, 0.5);
+      border: 1px solid rgba(124, 58, 237, 0.15);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 32px;
+    }
+
+    .mode h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #c4b5fd;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mode .tagline { color: #a5a0b8; font-size: 15px; margin-bottom: 20px; font-style: italic; }
+
+    .mode h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #e8e6f0;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    .mode p { color: #c7c2d6; margin-bottom: 10px; font-size: 15px; }
+    .mode ul { padding-left: 22px; margin-bottom: 10px; }
+    .mode li { color: #c7c2d6; margin-bottom: 6px; font-size: 15px; }
+
+    .tip {
+      background: rgba(124, 58, 237, 0.1);
+      border-left: 3px solid #7c3aed;
+      border-radius: 0 10px 10px 0;
+      padding: 12px 16px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #c4b5fd;
+    }
+
+    .also {
+      margin-top: 56px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(124, 58, 237, 0.15);
+    }
+
+    .also h2 { font-size: 22px; margin-bottom: 16px; color: #c4b5fd; }
+    .also-links { display: flex; flex-wrap: wrap; gap: 12px; }
+    .also-links a {
+      background: rgba(124, 58, 237, 0.12);
+      color: #c4b5fd;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      border: 1px solid rgba(124, 58, 237, 0.3);
+    }
+    .also-links a:hover { background: rgba(124, 58, 237, 0.2); }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid rgba(124, 58, 237, 0.15);
+      color: #6b6580;
+      font-size: 14px;
+    }
+    footer a { color: #a78bfa; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      .mode { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="logo">
+      <img class="logo-icon" src="wedgie_trivia.svg" alt="Wedgie Trivia">
+      Wedgie Trivia
+    </a>
+    <div class="nav-links">
+      <a href="/how-to-play">How to Play</a>
+      <a href="/about">About</a>
+      <a href="/faq">FAQ</a>
+      <a href="https://play.wedgietrivia.com" class="cta-nav">Play Now</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>How to Play Wedgie Trivia</h1>
+    <p class="intro">
+      Wedgie Trivia isn't one game — it's four. Every mode uses the same AI-generated
+      trivia engine underneath, but the way you compete changes completely. Here's how
+      each one works, start to finish.
+    </p>
+
+    <div class="mode">
+      <h2>&#127942; Wedgie — the board game</h2>
+      <p class="tagline">Collect all 8 Wedgies before anyone else does.</p>
+      <p>
+        Wedgie is the flagship mode: a board built from a ring of 16 tiles, four spokes
+        leading inward, and a hub at the center. Each tile belongs to one of eight
+        categories — history, science, geography, entertainment, sports, art,
+        literature, and technology — spread evenly so no category comes up more than
+        the others.
+      </p>
+      <h3>How a turn works</h3>
+      <ul>
+        <li>Roll the dice and move around the board.</li>
+        <li>Land on a category tile and answer its trivia question correctly to earn that Wedgie.</li>
+        <li>Reach the center hub and you get to pick any category you want to answer.</li>
+        <li>First player (or team) to collect all 8 Wedgies wins.</li>
+      </ul>
+      <h3>The steal mechanic</h3>
+      <p>
+        Land on a Wedgie you already own and you'll get the option to steal instead.
+        Pick a category any rival holds and a target player, then answer that
+        category's question. Get it right and you take their Wedgie. Get it wrong and
+        you lose the duplicate you were standing on — so it's a real gamble, not a free
+        swing.
+      </p>
+      <h3>Answer streaks</h3>
+      <p>
+        Get several questions right in a row and the difficulty ramps up with you — a
+        streak of 3 bumps the tier up once, a streak of 5 bumps it again, capped at
+        hard. Miss one and it resets to normal. It's on by default, so the game gets
+        tougher exactly when you're on a roll.
+      </p>
+      <div class="tip">
+        &#128161; Tip: hosts can rename any category before the game starts — turn
+        "Science" into "Cooking" or "History" into your friend group's inside jokes, and
+        the AI will build real questions around whatever theme you set.
+      </div>
+    </div>
+
+    <div class="mode">
+      <h2>&#9889; Classic — the quiz race</h2>
+      <p class="tagline">Everyone answers the same question, at the same time, as fast as they can.</p>
+      <p>
+        No board, no turns — Classic is a straight quiz. Every player sees the same
+        AI-generated question simultaneously and races to answer. The faster you answer
+        correctly, the more points you score; a wrong answer or running out of time
+        scores zero. Play through a set number of rounds and whoever has the most
+        points at the end wins.
+      </p>
+      <p>
+        It's the fastest mode to set up and the easiest to explain to new players — if
+        your group just wants a quick trivia night without learning board rules,
+        Classic is the one to pick.
+      </p>
+    </div>
+
+    <div class="mode">
+      <h2>&#128257; Heads Up — guess your hidden word</h2>
+      <p class="tagline">Everyone can see your word except you.</p>
+      <p>
+        Each round, one player gets a secret word or phrase they can't see — but
+        everyone else can. That player asks yes-or-no questions to narrow it down while
+        the timer runs, and the group answers honestly. Get it before time runs out and
+        you score; the faster the guess, the more points.
+      </p>
+      <p>
+        Stuck? You can ask for a hint — the other players get notified so they know to
+        help you out, and it's visible to everyone what round you're in and how much
+        time is left. Play rotates through everyone in the lobby so each person gets a
+        turn in the hot seat.
+      </p>
+    </div>
+
+    <div class="mode">
+      <h2>&#127917; Imposter — spot the faker</h2>
+      <p class="tagline">Everyone knows the secret word. Except one person.</p>
+      <p>
+        This is the social deduction mode. Everyone in the lobby gets the same secret
+        word — except one randomly chosen Imposter, who gets nothing and has to fake
+        it. Going around the group, each player gives a one-word clue related to the
+        secret word. The Imposter has to blend in without knowing what the word
+        actually is, while everyone else tries to give clues specific enough to prove
+        they know it, without being so obvious that the Imposter can just guess along.
+      </p>
+      <p>
+        After the clues, everyone votes on who they think the Imposter is. If the group
+        catches them, the Imposter gets one last chance: guess the secret word
+        correctly and they can still steal the win. Get caught and guess wrong, and the
+        rest of the group takes it.
+      </p>
+      <div class="tip">
+        &#128161; Tip: needs at least 3 players, and it's best with a bigger group —
+        more players means more clues to read between the lines of.
+      </div>
+    </div>
+
+    <div class="mode">
+      <h2>&#128250; Playing on a TV</h2>
+      <p class="tagline">Any mode can be cast to a big screen.</p>
+      <p>
+        Open <a href="https://play.wedgietrivia.com/tv" style="color:#c4b5fd">play.wedgietrivia.com/tv</a>
+        on any screen with a browser — a smart TV, a laptop plugged into one, a tablet
+        propped up — and enter your lobby code. The board, questions, and scores
+        display there while everyone else answers privately on their own phones by
+        scanning a QR code to join. It's free, and there's no limit on how many people
+        can join a single lobby.
+      </p>
+    </div>
+
+    <div class="also">
+      <h2>Keep exploring</h2>
+      <div class="also-links">
+        <a href="/about">Why we built Wedgie Trivia →</a>
+        <a href="/faq">Frequently asked questions →</a>
+        <a href="https://play.wedgietrivia.com">Start playing →</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="/">Home</a> &middot; <a href="/about">About</a> &middot; <a href="/faq">FAQ</a> &middot;
+    <a href="/terms">Terms of Service</a> &middot; <a href="/privacy">Privacy Policy</a> &middot;
+    <a href="mailto:support@wedgietrivia.com">Support</a>
+    <br>
+    &copy; 2026 Wedgie Trivia.
+  </footer>
+
+</body>
+</html>
