@@ -5,8 +5,8 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Wedgie Trivia</title>
-  <meta name="description" content="Why Wedgie Trivia exists: trivia that's actually about you, not generic trivia-night questions everyone's heard a hundred times.">
+  <title>Download for Android — Wedgie Trivia</title>
+  <meta name="description" content="Install Wedgie Trivia on Android directly. Download the APK, install it in a couple of taps, and start a game night in under a minute.">
   <link rel="icon" type="image/svg+xml" href="wedgie_trivia.svg">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -95,16 +95,75 @@
     p { color: #c7c2d6; margin-bottom: 16px; font-size: 16px; }
     p.lead { font-size: 19px; color: #a5a0b8; }
 
-    blockquote {
+    /* Download card */
+    .download-card {
+      background: rgba(124, 58, 237, 0.10);
+      border: 1px solid rgba(124, 58, 237, 0.35);
+      border-radius: 16px;
+      padding: 28px 24px;
+      margin: 32px 0;
+      text-align: center;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: #7c3aed;
+      color: #fff;
+      padding: 16px 40px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 18px;
+      transition: background 0.2s;
+    }
+    .download-btn:hover { background: #6d28d9; }
+
+    .meta {
+      margin-top: 16px;
+      color: #a5a0b8;
+      font-size: 14px;
+    }
+    .meta strong { color: #c7c2d6; }
+
+    /* Steps */
+    ol.steps { margin: 20px 0 8px; padding-left: 0; list-style: none; counter-reset: step; }
+    ol.steps li {
+      counter-increment: step;
+      position: relative;
+      padding-left: 46px;
+      margin-bottom: 18px;
+      color: #c7c2d6;
+    }
+    ol.steps li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: rgba(124, 58, 237, 0.2);
+      border: 1px solid rgba(124, 58, 237, 0.45);
+      color: #c4b5fd;
+      font-weight: 800;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+    ol.steps li strong { color: #e8e6f0; }
+
+    .note {
       border-left: 3px solid #7c3aed;
       background: rgba(124, 58, 237, 0.08);
       border-radius: 0 12px 12px 0;
-      padding: 20px 24px;
+      padding: 18px 22px;
       margin: 24px 0;
-      font-size: 17px;
       color: #e8e6f0;
-      font-style: italic;
+      font-size: 15px;
     }
+    .note p:last-child { margin-bottom: 0; }
 
     .also {
       margin-top: 56px;
@@ -136,6 +195,7 @@
 
     @media (max-width: 600px) {
       nav { padding: 16px 20px; }
+      .download-btn { display: block; padding: 16px 20px; }
     }
   </style>
 </head>
@@ -155,57 +215,73 @@
   </nav>
 
   <div class="container">
-    <h1>Why we built Wedgie Trivia</h1>
+    <h1>Get Wedgie Trivia on Android</h1>
     <p class="lead">
-      Most trivia games ask the same questions everyone's already heard. We wanted a
-      game that asks about you instead.
+      Install the app directly from us. It's the same Wedgie Trivia — AI-generated
+      questions, up to 12 players, four game modes.
     </p>
 
+    <div class="download-card">
+      <!-- Drop the built APK in the repo root with this exact filename. -->
+      <a class="download-btn" href="wedgie-trivia-1.2.apk" download>Download the APK</a>
+      <p class="meta">
+        Version <strong>1.2</strong> &middot; Android <strong>7.0</strong> and newer
+      </p>
+    </div>
+
+    <div class="note">
+      <p>
+        <strong>Don't want to install anything?</strong> You don't have to. Wedgie
+        Trivia runs in your phone's browser at
+        <a href="https://play.wedgietrivia.com" style="color:#a78bfa">play.wedgietrivia.com</a>
+        — same game, nothing to download. The app is just handy if you play often.
+      </p>
+    </div>
+
+    <h2>How to install it</h2>
+    <ol class="steps">
+      <li>
+        <strong>Tap Download above.</strong> Your browser will ask whether to keep the
+        file — Android says this about every APK, so go ahead and keep it.
+      </li>
+      <li>
+        <strong>Open the downloaded file.</strong> Tap it in your notifications, or find
+        it in Files under Downloads.
+      </li>
+      <li>
+        <strong>Allow installs from your browser.</strong> The first time, Android sends
+        you to a settings screen to permit installs from that app. Turn it on and press
+        back.
+      </li>
+      <li>
+        <strong>Tap Install</strong>, then Open when it's finished.
+      </li>
+    </ol>
+
+    <h2>Why does Android warn me?</h2>
     <p>
-      The idea started at an actual game night. Every trivia app in the room had the
-      same problem: a fixed question bank. Play it twice with the same group and
-      someone remembers the answer before the timer even starts. The "In what year did
-      World War II end?" energy gets old fast, and the games built to fix it usually
-      solve it by just having more pre-written questions — which delays the problem,
-      it doesn't remove it.
+      Because the app isn't coming from the Play Store. Android shows the same warnings
+      for every app installed this way, whoever made it — it's a warning about the
+      source, not a judgement about this particular file.
+    </p>
+    <p>
+      Play Protect may add a screen saying it doesn't recognise the developer. Tapping
+      through it is expected here. If that makes you uncomfortable, use
+      <a href="https://play.wedgietrivia.com" style="color:#a78bfa">the browser version</a>
+      instead — it needs no permissions at all and it's the same game.
+    </p>
+    <p>
+      Once you've installed it, it's worth turning the "install unknown apps" permission
+      back off for your browser. You won't need it again unless you're updating, and
+      leaving it on is a door you don't need open.
     </p>
 
-    <h2>Questions that are actually new every time</h2>
+    <h2>Updating later</h2>
     <p>
-      Wedgie Trivia generates its questions live with AI instead of pulling from a
-      fixed bank, so the same lobby can play ten games in a row and never see a repeat.
-      You can also steer it — rename a category to a theme your group actually cares
-      about ("90s movies," "our fantasy football league," whatever it is) and the
-      questions get built around that instead of generic trivia.
-    </p>
-
-    <h2>The part that makes it actually about your friends</h2>
-    <p>
-      The feature we're proudest of is personal questions. Fill out a short profile —
-      favorite movie, hometown, go-to order, things like that — and the game can build
-      real multiple-choice questions out of it:
-    </p>
-    <blockquote>"What's Sarah's favorite fast food spot?"</blockquote>
-    <p>
-      That's the moment the game stops being generic trivia and turns into something
-      only your group could play. It's opt-in, it's private to your lobby, and it
-      tends to be the part people actually remember afterward — not who won, but who
-      didn't know their best friend's own answer.
-    </p>
-
-    <h2>Free, and built to stay that way for the core game</h2>
-    <p>
-      Wedgie Trivia is free to play — hosting, joining, and every game mode. It works
-      in a browser on any device, no install required, and you can put it on a TV for
-      the whole room to see while everyone answers from their own phone. Playing as a
-      guest takes about ten seconds: pick a name and go.
-    </p>
-
-    <h2>What's next</h2>
-    <p>
-      We're still building. New game modes, more ways to customize a lobby, and
-      continued work on question variety are all active — the goal is a game you can
-      genuinely keep coming back to, not one you burn through in a weekend.
+      Most of Wedgie Trivia updates itself — the game screens load fresh each time you
+      open the app, so new question types, modes and fixes arrive without you doing
+      anything. You'd only download a new APK for changes to the app shell itself, and
+      we'll bump the version number above when that happens.
     </p>
 
     <div class="also">
@@ -213,7 +289,7 @@
       <div class="also-links">
         <a href="/how-to-play">See the full rules →</a>
         <a href="/faq">Frequently asked questions →</a>
-        <a href="https://play.wedgietrivia.com">Start playing →</a>
+        <a href="https://play.wedgietrivia.com">Play in your browser →</a>
       </div>
     </div>
   </div>
