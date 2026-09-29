@@ -53,7 +53,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: June 27, 2026</p>
+        <p class="updated">Last updated: September 21, 2026</p>
 
         <h2>1. Introduction</h2>
         <p>Wedgie Trivia ("we", "us", "our") operates the website wedgietrivia.com, play.wedgietrivia.com, and related applications (the "Service"). This Privacy Policy explains how we collect, use, and protect your personal information.</p>
@@ -61,7 +61,8 @@
         <h2>2. Information We Collect</h2>
         <p><strong>Account information:</strong> When you create an account, we collect your email address, display name, and password. If you sign in with Google, Apple, or Facebook, we receive your name and email from that provider. Guest accounts are identified by a device-generated ID.</p>
         <p><strong>Profile information:</strong> You may optionally provide personal details such as favorite color, favorite food, favorite movie, favorite music, hobby, birthday, hometown, fun fact, and dream vacation. This information is used to generate personalized trivia questions.</p>
-        <p><strong>Device information:</strong> We collect a unique device identifier to support authentication and enable session reconnection.</p>
+        <p><strong>Device information:</strong> We collect a unique device identifier to support authentication and enable session reconnection. In the mobile apps, our advertising provider may also access your device's advertising identifier — see <a href="#advertising">Advertising</a> below.</p>
+        <p><strong>Date of birth:</strong> We ask for your date of birth once, to check you are old enough to use the Service. Providing it is optional, and it is used only for that check — it is stored on your own device and is never sent to our servers.</p>
         <p><strong>Usage data:</strong> We collect gameplay data such as games played, lobby codes, and match history to operate the Service.</p>
         <p><strong>Browser storage:</strong> The web version of the Service uses localStorage and IndexedDB to store session tokens and game state locally on your device.</p>
 
@@ -70,18 +71,28 @@
             <li><strong>Gameplay:</strong> Account and profile data is used to run multiplayer trivia games, including generating personalized questions about players.</li>
             <li><strong>Authentication:</strong> Email, passwords, and device IDs are used to authenticate you and maintain your session.</li>
             <li><strong>Service operation:</strong> Usage data is used to operate, maintain, and improve the Service.</li>
+            <li><strong>Advertising:</strong> The mobile apps show ads. Your device's advertising identifier may be used by our advertising provider to serve and measure them.</li>
         </ul>
 
         <h2>4. Third-Party Services</h2>
         <p>We use the following third-party services that may process your data:</p>
         <ul>
-            <li><strong>Google Gemini</strong> — AI question generation. Profile information and custom topics you provide may be sent to Google's Gemini API to generate trivia questions. Subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+            <li><strong>OpenAI</strong> — AI question generation (current provider). Profile information and custom topics you provide may be sent to OpenAI's API to generate trivia questions. Subject to <a href="https://openai.com/policies/privacy-policy/">OpenAI's Privacy Policy</a>.</li>
+            <li><strong>Google Gemini</strong> — AI question generation (alternate provider). The app can switch between providers, and the same profile information and custom topics may instead be sent to Google's Gemini API. Subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
             <li><strong>Supabase</strong> — Authentication and database storage for accounts and profiles. Subject to <a href="https://supabase.com/privacy">Supabase's Privacy Policy</a>.</li>
+            <li><strong>Google AdMob</strong> — Advertising in the mobile apps. AdMob may access your device's advertising identifier and related device data to serve and measure ads. Subject to <a href="https://policies.google.com/technologies/partner-sites">Google's advertising policies</a>.</li>
             <li><strong>Fly.io</strong> — Hosting for the realtime game server.</li>
             <li><strong>Vercel</strong> — Hosting for the web app.</li>
         </ul>
 
-        <h2>5. Data Sharing</h2>
+        <h2 id="advertising">5. Advertising</h2>
+        <p>The mobile apps show ads supplied by Google AdMob. The web version does not.</p>
+        <p><strong>Advertising identifier:</strong> To serve ads, AdMob may access your device's advertising identifier (the IDFA on iOS, or the Advertising ID on Android) along with basic device and ad-interaction data. This is handled by Google, not by us — we never receive or store your advertising identifier.</p>
+        <p><strong>Your choice on iOS:</strong> On first launch, iOS asks whether you allow the app to track you across other companies' apps and websites. If you decline, ads still appear but are not personalized using that identifier. You can change this at any time in <em>Settings &rsaquo; Privacy &amp; Security &rsaquo; Tracking</em>.</p>
+        <p><strong>Your choice on Android:</strong> You can reset or delete your Advertising ID in <em>Settings &rsaquo; Privacy &rsaquo; Ads</em>.</p>
+        <p>We do not sell your personal information, and we do not share your account or profile details with advertisers.</p>
+
+        <h2>6. Data Sharing</h2>
         <p>We do not sell your personal information. Your data is shared only in the following circumstances:</p>
         <ul>
             <li>With other players in your lobby (display name, avatar, and profile details you've provided — this is necessary for personalized trivia).</li>
@@ -89,16 +100,16 @@
             <li>If required by law or to protect our legal rights.</li>
         </ul>
 
-        <h2>6. Data Storage and Security</h2>
+        <h2>7. Data Storage and Security</h2>
         <p>Your data is stored on our game servers. We use industry-standard security measures to protect your information, including encrypted connections (TLS) and hashed passwords. However, no method of transmission or storage is 100% secure.</p>
 
-        <h2>7. Data Retention</h2>
+        <h2>8. Data Retention</h2>
         <ul>
             <li>Account data is retained as long as your account is active.</li>
             <li>Guest account data may be deleted after a period of inactivity.</li>
         </ul>
 
-        <h2>8. Your Rights</h2>
+        <h2>9. Your Rights</h2>
         <p>Depending on your jurisdiction, you may have the right to:</p>
         <ul>
             <li><strong>Access</strong> the personal data we hold about you.</li>
@@ -109,16 +120,16 @@
         </ul>
         <p>To exercise any of these rights, contact us at <a href="mailto:support@wedgietrivia.com">support@wedgietrivia.com</a>.</p>
 
-        <h2>9. Children's Privacy</h2>
+        <h2>10. Children's Privacy</h2>
         <p>The Service is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us and we will delete it promptly.</p>
 
-        <h2>10. Canadian Privacy (PIPEDA)</h2>
+        <h2>11. Canadian Privacy (PIPEDA)</h2>
         <p>If you are located in Canada, your personal information is handled in accordance with the Personal Information Protection and Electronic Documents Act (PIPEDA). You have the right to access and correct your personal information and to file a complaint with the Office of the Privacy Commissioner of Canada.</p>
 
-        <h2>11. Changes to This Policy</h2>
+        <h2>12. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy on this page with a new "Last updated" date. Continued use of the Service after changes constitutes acceptance of the updated policy.</p>
 
-        <h2>12. Contact</h2>
+        <h2>13. Contact</h2>
         <p>For questions about this Privacy Policy or your personal data, contact us at <a href="mailto:support@wedgietrivia.com">support@wedgietrivia.com</a>.</p>
 
         <div class="footer">
